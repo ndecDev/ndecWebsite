@@ -481,17 +481,29 @@ html, body {
   border: none;
 }
 .elementor-element.elementor-element-fbd9ffe.elementor-widget-image {
-    height: 40.38px !important;   /* fixed height */
-    display: flex;                /* enable flexbox */
-    align-items: center;          /* vertically center content */
-    justify-content: center;      /* optional: horizontally center */
-    overflow: hidden;             /* hide any overflow if needed */
+    height: 50px !important;      /* fixed height */
+    min-width: 50px !important;   /* width never smaller than height */
+    display: flex;                   
+    align-items: center   !important;          /* vertical center */
+    justify-content: center;         /* horizontal center */
+    overflow: hidden;                
 }
 
 .elementor-element.elementor-element-fbd9ffe.elementor-widget-image img {
-    display: block !important;
-    max-height: 100%;             /* ensures image fits inside div */
-    width: 40px;                  /* maintain aspect ratio */
+    max-height: 50px !important;     /* fit within div height */
+    max-width: 50px !important;      /* fit within div width */
+    width: 50px !important;          /* maintain aspect ratio */
+    height: auto !important;
+    display: block;
+    object-fit: contain;             /* scale image inside div without cropping */
+    align-items: center  !important;           /* vertical center */
+    justify-content: center;         /* horizontal center */
+
+}
+
+.e-con-inner {
+    align-items: center !important;             /* vertical center */
+   
 }
 </style>
 
