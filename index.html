@@ -453,25 +453,32 @@ LEARN ENGLISH TO REACH THE GOAL</h2>				</div>
 
 
 <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
 #video-container {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 177.78vh;
+  width: 177.78vh; /* keep your wide width */
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* crop excess iframe */
+  transform: translateX(-50%); /* center container */
   z-index: -1;
-  transform: translateX(-50%);
 }
 
 #video-container iframe {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 177.78vh; 
+  width: 177.78vh;
   height: 100vh;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* center iframe */
   pointer-events: none;
+  border: none;
 }
 </style>
 
