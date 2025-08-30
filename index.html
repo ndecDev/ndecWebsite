@@ -480,6 +480,19 @@ html, body {
   pointer-events: none;
   border: none;
 }
+.elementor-element.elementor-element-fbd9ffe.elementor-widget-image {
+    height: 40.38px !important;   /* fixed height */
+    display: flex;                /* enable flexbox */
+    align-items: center;          /* vertically center content */
+    justify-content: center;      /* optional: horizontally center */
+    overflow: hidden;             /* hide any overflow if needed */
+}
+
+.elementor-element.elementor-element-fbd9ffe.elementor-widget-image img {
+    display: block !important;
+    max-height: 100%;             /* ensures image fits inside div */
+    width: 40px;                  /* maintain aspect ratio */
+}
 </style>
 
 <div id="video-container">
